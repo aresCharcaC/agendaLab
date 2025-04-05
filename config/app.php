@@ -41,6 +41,11 @@ return [
 
     'debug' => (bool) env('APP_DEBUG', false),
 
+    'providers' => [
+        // Otros proveedores...
+        App\Providers\DatabaseUrlServiceProvider::class,
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Application URL
